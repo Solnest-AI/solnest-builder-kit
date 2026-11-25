@@ -1,0 +1,39 @@
+{
+  "kit": "builder-kit",
+  "title": "Builder Kit",
+  "tools": [
+    {
+      "id": "supabase",
+      "label": "Supabase",
+      "kind": "oauth",
+      "url": "https://mcp.supabase.com/mcp?read_only=true",
+      "fullUrl": "https://mcp.supabase.com/mcp",
+      "connector": "connectors/supabase.md",
+      "skills": "apps, obsidian-second-brain extras"
+    },
+    {
+      "id": "github",
+      "label": "GitHub (MCP)",
+      "kind": "http-key",
+      "url": "https://api.githubcopilot.com/mcp/readonly",
+      "fullUrl": "https://api.githubcopilot.com/mcp/",
+      "keys": [
+        "GITHUB_PAT"
+      ],
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_PAT}"
+      },
+      "test": "github",
+      "connector": "connectors/github.md",
+      "skills": "apps and code"
+    },
+    {
+      "id": "dropbox",
+      "label": "Dropbox",
+      "kind": "oauth",
+      "url": "https://mcp.dropbox.com/mcp",
+      "connector": "connectors/dropbox.md",
+      "skills": "files, obsidian-second-brain extras (optional)"
+    }
+  ]
+}

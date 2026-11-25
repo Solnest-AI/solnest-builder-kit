@@ -1,0 +1,40 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.token
+tokens.json
+token.json
+credentials/
+keys.env
+# installed servers, caches, state
+vendor/
+node_modules/
+.venv/
+.cache/
+__pycache__/
+nanobanana-output/
+# browser profiles and captures
+profiles/
+.chrome-profile/
+*.har
+*-cookies.json
+cookie.txt
+session.txt
+storage_state.json
+# os
+.DS_Store
+Thumbs.db
+# updater state and the installed launcher (never part of a release)
+.update-backup/
+.builder-kit-files.txt
+bin/
+*.update-tmp
+*.pyc
+.pytest_cache/
+*.bak*
+# editor and agent rule files that sync tools drop into project folders (private, never shipped)
+.cursor/
+.windsurf/
+AGENTS.md
+GEMINI.md
